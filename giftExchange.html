@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+    <meta charset="UTF-8">
+    <title>Family Gift Exchange</title>
+</head>
+<body>
+<h1 class="w3-header w3-green">Family Gift Exchange</h1>
+<hr>
+<div class="w3-container">
+    <table class="w3-table-all">
+        <thread>
+            <tr class="w3-red">
+                <th>Gift Giver</th>
+                <th>Gift Receiver</th>
+                <th>Year</th>
+            </tr>
+            <tr id="row2">
+                <td id="exampleTableCell1">(Person 1)</td>
+                <td id="exampleTableCell2">(Person 2)</td>
+                <td id="exampleTableCell3">(2017)</td>
+            </tr>
+        </thread>
+    </table>
+</div>
+
+<hr>
+<button class="w3-btn w3-blue full-button w3-round-large" type="button" id="generate-button" onclick="buildTable()">Generate Gift Exchange Table</button>
+<!--trying to remember <hr> tag, that is reason for comment-->
+<hr>
+<div class=" form-card w3-container" id="form-card">
+
+    <header class="w3-container w3-green">
+        <h4>
+            Add Someone to Secret Santa
+        </h4>
+    </header>
+
+    <input class="form-input" type="text" name="firstName" placeholder="First Name" id="formFirstName"><br>
+    <input class="form-input" type="text" name="lastName" placeholder="Last Name" id="formLastName"><br>
+    Select the family that the person belongs to.
+    <br>
+    <input class="form-input" type="radio" name="family" value="Derrow" id="radioDerrow"> Derrow
+    <br>
+    <input class="form-input" type="radio" name="family" value="LaCour" id="radioLaCour"> LaCour
+    <br>
+    <input class="form-input" type="radio" name="family" value="DrakeBurns" id="radioDrakeBurns"> Drake/Burns
+    <br>
+    <button class="w3-btn w3-blue full-button w3-round-large" type="button" id="submit-button" onclick="addPersonToArray()">Submit</button>
+</div>
+
+<div class="w3-modal" id="modalDiv">
+    <div class="w3-modal-content">
+        <div class="w3-content w3-black">
+            <span onclick="document.getElementById('modalDiv').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <p>Either you did not enter a name or you did not select a family.</p>
+            <p>Please check those fields.</p>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

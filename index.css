@@ -1,0 +1,21 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+#form-card {
+    content: 'center';
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-input {
+    text-align: left;
+}
+#generate-button {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.full-button {
+    width: 50%;
+}
